@@ -1,0 +1,102 @@
+@media (max-width:576px) {
+  
+    .imagenes-servicios {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 10px;
+    }
+  
+  
+    .cortinas-servicios-div {
+        display: grid;
+        gap: 30px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+  
+  
+    .luminarias-servicios-div {
+        display: grid;
+        gap: 30px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+  
+  
+    .muebles-servicios-div {
+        display: grid;
+        gap: 30px;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+  
+  
+    .imagen-servicio-cortina {
+        border-radius: 30px;
+        width: 100%;
+    }
+  
+  
+    .imagen-servicio-luminarias {
+        border-radius: 30px;
+        width: 100%;
+    }
+  
+  
+    .imagen-servicio-muebles {
+        border-radius: 30px;
+        width: 100%;
+    }
+  
+  
+    .imagenes-servicios h3 {
+        width: 100%;
+    }
+ 
+}
+
+@media (min-width:576px) {ç
+    .imagenes-servicios {
+        display: grid;
+        padding-top: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+    }
+  
+  
+    .imagenes-servicios h3 {
+        display: none;
+    }
+  
+  
+    .imagen-servicio-cortina {
+        border-radius: 30px;
+        padding: 10px;
+        width: 100%;
+    }
+  
+  
+    .imagen-servicio-luminarias {
+        border-radius: 30px;
+        padding: 10px;
+        width: 100%;
+    }
+  
+  
+    .imagen-servicio-muebles {
+        border-radius: 30px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    .todas {
+        height: 250px;
+        width: 250px;
+    }
+  
+  
+    .imagenes-miniatura {
+        text-align: center;
+    }
+  
+ }

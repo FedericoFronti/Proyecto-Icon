@@ -1,0 +1,40 @@
+@media (max-width:576px) {
+  
+    .contenedor-contacto {
+        gap: 30px;
+        text-align: center;
+        padding-top: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+  
+  
+    .mapa-grande {
+        display: none;
+    }
+  
+  
+    .textarea-contacto {
+        padding-bottom: 10px;
+    }
+  
+}
+@media (min-width:576px) { 
+    .contenedor-contacto {
+        display: grid;
+        padding-top: 15px;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+    }
+  
+  
+    .mapa-grande {
+        padding: 10px;
+        width: 100%;
+    }
+  
+  
+    .contenedor-ul-contacto map {
+        display: none;
+    }
+}
