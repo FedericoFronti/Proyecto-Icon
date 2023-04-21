@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* SETEO GRAL*/
 * {
   margin: 0;
@@ -222,7 +221,7 @@ footer {
   }
 }
 @media (min-width: 576px) {
-  ç .imagenes-servicios {
+  .imagenes-servicios {
     display: grid;
     padding-top: 15px;
     grid-template-columns: 1fr 1fr 1fr;
