@@ -220,15 +220,15 @@ footer {
     grid-template-columns: 1fr 1fr;
   }
   .imagen-servicio-cortina {
-    border-radius: 30px;
+    border-radius: 15px;
     width: 100%;
   }
   .imagen-servicio-luminarias {
-    border-radius: 30px;
+    border-radius: 15px;
     width: 100%;
   }
   .imagen-servicio-muebles {
-    border-radius: 30px;
+    border-radius: 15px;
     width: 100%;
   }
   .imagenes-servicios h3 {
