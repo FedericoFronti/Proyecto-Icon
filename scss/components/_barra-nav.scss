@@ -1,7 +1,12 @@
-.nav-list {
+.barra__nav-list {
     padding: 0%;
     display: flex;
     gap: 15px;
     text-align: center;
-  
+
+  li :active {
+    color: #F6B718;
+
   }
+}
+

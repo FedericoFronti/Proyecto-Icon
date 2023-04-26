@@ -1,6 +1,6 @@
 @media (max-width:576px) {
   
-    .contenedor-contacto {
+    .contacto {
         gap: 30px;
         text-align: center;
         padding-top: 15px;
@@ -9,18 +9,18 @@
     }
   
   
-    .mapa-grande {
+    .contacto__lista--mapa-grande {
         display: none;
     }
   
   
-    .textarea-contacto {
+    .contacto__lista--textarea {
         padding-bottom: 10px;
     }
   
 }
 @media (min-width:576px) { 
-    .contenedor-contacto {
+    .contacto {
         display: grid;
         padding-top: 15px;
         grid-template-columns: 1fr 1fr;
@@ -28,13 +28,13 @@
     }
   
   
-    .mapa-grande {
+    .contacto__lista--mapa-grande {
         padding: 10px;
         width: 100%;
     }
   
   
-    .contenedor-ul-contacto map {
+    .contacto__lista--mapa-chico {
         display: none;
     }
 }

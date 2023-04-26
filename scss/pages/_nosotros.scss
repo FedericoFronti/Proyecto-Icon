@@ -8,7 +8,7 @@
     }
   
   
-    .nuestra-mision {
+    .nosotros-main__mision {
         justify-content: center;
         align-items: center;
         text-align: justify;
@@ -17,20 +17,20 @@
     }
   
   
-    .titulo-mision {
+    .nosotros-main__vision--titulo-mision {
         padding-bottom: 40px;
         height: 32px;
     }
   
   
-    .nuestra-vision {
+    .nosotros-main__vision {
         justify-content: center;
         align-items: center;
         text-align: justify;
     }
   
   
-    .titulo-vision {
+    .nosotros-main__vision--titulo-vision {
         padding-bottom: 40px;
         height: 32px;
     }
@@ -47,7 +47,7 @@
     }
   
   
-    .nuestra-mision {
+    .nosotros-main__mision {
         display: grid;
         grid-template-columns: 30% 40%;
         justify-content: center;
@@ -58,13 +58,13 @@
     }
   
   
-    .titulo-mision {
+    .nosotros-main__vision--titulo-mision {
         height: 30vh;
         width: 30vw;
     }
   
   
-    .nuestra-vision {
+    .nosotros-main__vision {
         display: grid;
         grid-template-columns: 30% 40%;
         justify-content: center;
@@ -74,7 +74,7 @@
     }
   
   
-    .titulo-vision {
+    .nosotros-main__vision--titulo-vision {
         height: 30vh;
         width: 30vw;
     }

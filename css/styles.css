@@ -1,4 +1,3 @@
-/* SETEO GRAL*/
 * {
   margin: 0;
   padding: 0;
@@ -7,15 +6,6 @@
 a {
   text-decoration: none;
   color: #ffffff;
-}
-
-.boton-enviar {
-  width: 70px;
-  height: 25px;
-  text-align: center;
-  justify-content: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  border-radius: 15px;
 }
 
 h1 {
@@ -41,14 +31,17 @@ ul,
 ol {
   list-style-type: none;
   justify-content: center;
-  padding-top: 20px;
-  padding-left: 0%;
 }
 
 body {
   background-image: url("../fotos/fondo/cartographer.png");
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   color: #ffffff;
+}
+body main {
+  padding: 25px;
+  width: auto;
+  border: 0%;
 }
 
 .header {
@@ -57,17 +50,21 @@ body {
   text-align: center;
   justify-content: center;
 }
-
-main {
-  padding: 25px;
-  width: auto;
-  border: 0%;
+.header ul,
+.header ol {
+  list-style-type: none;
+  justify-content: center;
+  padding-top: 20px;
+  padding-left: 0%;
 }
 
 footer {
   padding: 25px;
   text-align: center;
   width: 100vw;
+}
+footer img {
+  width: 100;
 }
 
 .imagenes-miniatura {
@@ -77,60 +74,102 @@ footer {
   gap: 10px;
   width: 100%;
   height: auto;
+  text-align: center;
 }
-
 .imagenes-miniatura img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.nav-list {
+.barra__nav-list {
   padding: 0%;
   display: flex;
   gap: 15px;
   text-align: center;
 }
+.barra__nav-list li :active {
+  color: #F6B718;
+}
+
+.boton-enviar {
+  width: 70px;
+  height: 25px;
+  text-align: center;
+  justify-content: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-radius: 15px;
+}
 
 @media (max-width: 576px) {
-  .contenedor-index {
-    display: grid;
-    grid-template-rows: 40% 50%;
-    justify-content: center;
-    gap: 60px;
-  }
-  .imagen-index {
-    width: 100%;
-    padding: 0%;
-    border: 0%;
+  .boton-adjuntar {
+    width: 110px;
+    height: 25px;
     text-align: center;
-  }
-  .parrafo-index {
-    width: 100%;
-  }
-  .imagen-index-grande {
-    display: none;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-radius: 15px;
+    padding-right: 15px;
   }
 }
 @media (min-width: 576px) {
-  .contenedor-index {
-    display: grid;
-    grid-template-columns: 30% 60%;
+  .boton-adjuntar {
+    width: 110px;
+    height: 25px;
+    text-align: center;
     justify-content: center;
-    align-items: center baseline;
-    padding-top: 20px;
-    padding-bottom: 200px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-radius: 15px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 570px) {
+  .index-main {
+    display: grid;
+    grid-template-rows: 40% 60%;
+    text-align: center;
+  }
+  .index-main__parrafo {
+    text-align: justify;
+  }
+  .index-main__imagen--grande {
+    display: none;
+  }
+  .index-main__imagen--mediano {
+    display: none;
+  }
+}
+@media (min-width: 571px) and (max-width: 749px) {
+  .index-main {
+    display: grid;
+    grid-template-rows: 30% 70%;
+    text-align: center;
+    gap: 40px;
+  }
+  .index-main__parrafo {
+    text-align: justify;
+  }
+  .index-main__imagen--grande {
+    display: none;
+  }
+  .index-main__imagen--pequeno {
+    display: none;
+  }
+}
+@media (min-width: 750px) {
+  .index-main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
     gap: 30px;
   }
-  .parrafo-index {
-    height: 30vh;
-    width: 30vw;
+  .index-main__parrafo {
+    text-align: justify;
   }
-  .imagen-index-grande {
-    height: 40vh;
-    width: 40vw;
+  .index-main__imagen--mediano {
+    display: none;
   }
-  .imagen-index {
+  .index-main__imagen--pequeno {
     display: none;
   }
 }
@@ -141,23 +180,23 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .nuestra-mision {
+  .nosotros-main__mision {
     justify-content: center;
     align-items: center;
     text-align: justify;
     padding-top: 0%;
     padding-bottom: 10px;
   }
-  .titulo-mision {
+  .nosotros-main__vision--titulo-mision {
     padding-bottom: 40px;
     height: 32px;
   }
-  .nuestra-vision {
+  .nosotros-main__vision {
     justify-content: center;
     align-items: center;
     text-align: justify;
   }
-  .titulo-vision {
+  .nosotros-main__vision--titulo-vision {
     padding-bottom: 40px;
     height: 32px;
   }
@@ -169,7 +208,7 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .nuestra-mision {
+  .nosotros-main__mision {
     display: grid;
     grid-template-columns: 30% 40%;
     justify-content: center;
@@ -178,11 +217,11 @@ footer {
     padding-bottom: 50px;
     gap: 30px;
   }
-  .titulo-mision {
+  .nosotros-main__vision--titulo-mision {
     height: 30vh;
     width: 30vw;
   }
-  .nuestra-vision {
+  .nosotros-main__vision {
     display: grid;
     grid-template-columns: 30% 40%;
     justify-content: center;
@@ -190,7 +229,7 @@ footer {
     gap: 30px;
     padding-bottom: 20px;
   }
-  .titulo-vision {
+  .nosotros-main__vision--titulo-vision {
     height: 30vh;
     width: 30vw;
   }
@@ -201,37 +240,37 @@ footer {
     grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
   }
-  .cortinas-servicios-div {
-    display: grid;
-    gap: 30px;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-  }
-  .luminarias-servicios-div {
-    display: grid;
-    gap: 30px;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-  }
-  .muebles-servicios-div {
-    display: grid;
-    gap: 30px;
-    width: 100%;
-    grid-template-columns: 1fr 1fr;
-  }
-  .imagen-servicio-cortina {
-    border-radius: 15px;
-    width: 100%;
-  }
-  .imagen-servicio-luminarias {
-    border-radius: 15px;
-    width: 100%;
-  }
-  .imagen-servicio-muebles {
-    border-radius: 15px;
-    width: 100%;
-  }
   .imagenes-servicios h3 {
+    width: 100%;
+  }
+  .imagenes-servicios__cortinas {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imagenes-servicios__luminarias {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imagenes-servicios__muebles {
+    display: grid;
+    gap: 30px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+  }
+  .imagenes-servicios__cortinas--portada {
+    border-radius: 15px;
+    width: 100%;
+  }
+  .imagenes-servicios__luminarias--portada {
+    border-radius: 15px;
+    width: 100%;
+  }
+  .imagenes-servicios__muebles--portada {
+    border-radius: 15px;
     width: 100%;
   }
 }
@@ -245,158 +284,98 @@ footer {
   .imagenes-servicios h3 {
     display: none;
   }
-  .imagen-servicio-cortina {
+  .imagenes-servicios__cortinas--portada {
     border-radius: 30px;
     padding: 10px;
     width: 100%;
   }
-  .imagen-servicio-luminarias {
+  .imagenes-servicios__luminarias--portada {
     border-radius: 30px;
     padding: 10px;
     width: 100%;
   }
-  .imagen-servicio-muebles {
+  .imagenes-servicios__muebles--portada {
     border-radius: 30px;
     padding: 10px;
     width: 100%;
   }
-  .todas {
-    width: 250px;
-    height: 250px;
-  }
-  .imagenes-miniatura {
-    text-align: center;
-  }
 }
-@media (min-width: 576px) {
-  .presentacion-cortinas {
-    text-align: center;
-    padding-bottom: 20px;
-  }
+.presentacion-cortinas {
+  text-align: center;
+  padding-bottom: 20px;
 }
-@media (min-width: 576px) {
-  .presentacion-luminaria {
-    text-align: center;
-    padding-bottom: 20px;
-  }
+
+.presentacion-luminaria {
+  text-align: center;
+  padding-bottom: 20px;
 }
-@media (min-width: 576px) {
-  .presentacion-muebles {
-    text-align: center;
-    padding-bottom: 20px;
-  }
+
+.presentacion-muebles {
+  text-align: center;
+  padding-bottom: 20px;
 }
+
 @media (max-width: 576px) {
-  .contenedor-contacto {
+  .contacto {
     gap: 30px;
     text-align: center;
     padding-top: 15px;
     justify-content: center;
     align-items: center;
   }
-  .mapa-grande {
+  .contacto__lista--mapa-grande {
     display: none;
   }
-  .textarea-contacto {
+  .contacto__lista--textarea {
     padding-bottom: 10px;
   }
 }
 @media (min-width: 576px) {
-  .contenedor-contacto {
+  .contacto {
     display: grid;
     padding-top: 15px;
     grid-template-columns: 1fr 1fr;
     text-align: center;
   }
-  .mapa-grande {
+  .contacto__lista--mapa-grande {
     padding: 10px;
     width: 100%;
   }
-  .contenedor-ul-contacto map {
+  .contacto__lista--mapa-chico {
     display: none;
   }
 }
 @media (max-width: 576px) {
-  .lista-trabajadores {
+  .formulario__lista-puestos {
     gap: 70px;
     padding: 15px;
     text-align: center;
   }
-  .lista-trabaja-nosotros {
+  .formulario__lista-campos {
     text-align: left;
     padding-left: 0%;
   }
-  .nombre {
+  .formulario__lista-campos li {
     padding: 10px;
-  }
-  .mail {
-    padding: 10px;
-  }
-  .puesto {
-    padding: 10px;
-  }
-  .telefono {
-    padding: 10px;
-  }
-  .cv {
-    padding: 10px;
-  }
-  .boton-enviar-contenedor {
-    padding: 10px;
-  }
-  .boton-adjuntar {
-    width: 110px;
-    height: 25px;
-    text-align: center;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    border-radius: 15px;
-    padding-right: 15px;
   }
 }
 @media (min-width: 576px) {
-  .lista-trabajadores {
-    gap: 70px;
-    padding: 15px;
-  }
-  .contenedor-formulario-trabaja {
-    gap: 100px;
-  }
-  .lista-trabaja-nosotros {
-    align-items: center;
-    padding-left: 15px;
-  }
-  .nombre {
-    padding: 10px;
-  }
-  .mail {
-    padding: 10px;
-  }
-  .puesto {
-    padding: 10px;
-  }
-  .telefono {
-    padding: 10px;
-  }
-  .cv {
-    padding: 10px;
-  }
-  .contenedor-formulario-trabaja {
+  .formulario {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 100px;
   }
-  .boton-enviar-contenedor {
+  .formulario__lista-puestos {
+    gap: 70px;
+    padding: 15px;
+  }
+  .formulario__lista-campos {
+    align-items: center;
+    padding-left: 15px;
+  }
+  .formulario__lista-campos li {
     padding: 10px;
-  }
-  .boton-adjuntar {
-    width: 110px;
-    height: 25px;
-    text-align: center;
-    justify-content: center;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    border-radius: 15px;
-    padding-right: 50px;
   }
 }
 
