@@ -4,19 +4,24 @@
         display: grid;
         grid-template-rows: 40% 60%;
         text-align: center;
-    }
+        justify-content: center;
 
-    .index-main__parrafo {
-        text-align: justify;
-    }
+        &__parrafo {
+            text-align: justify;
+        }
 
-    .index-main__imagen--grande {
-        display: none;
-    }
+        &__imagen--grande {
+            display: none;
+        }
 
-    .index-main__imagen--mediano {
-        display: none;
-    } 
+        &__imagen--mediano {
+            display: none;
+        }
+
+        &__imagen--pequeno {
+            display: none;
+        }
+    }
 }
 
 @media (min-width:571px) and (max-width: 749px) {
@@ -25,41 +30,67 @@
         display: grid;
         grid-template-rows: 30% 70%;
         text-align: center;
+        justify-content: center;
         gap: 40px;
-    }
 
-    .index-main__parrafo {
-        text-align: justify;
-    }
-
-    .index-main__imagen--grande {
-        display: none;
-    }
-
-    .index-main__imagen--pequeno {
-        display: none;
-    }
-}
-
-    @media (min-width:750px) {
-
-        .index-main {
-            display: grid;
-            grid-template-columns: 30% 70%;
-            text-align: center; 
-            gap: 30px;   
-        }
-
-        .index-main__parrafo {
+        &__parrafo {
             text-align: justify;
         }
 
-        .index-main__imagen--mediano {
+        &__imagen--grande {
             display: none;
         }
-    
-        .index-main__imagen--pequeno {
+
+        &__imagen--pequeno {
             display: none;
         }
+    }
 }
 
+@media (min-width:750px) and (max-width: 1100px) {
+
+    .index-main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+
+        &__parrafo {
+            text-align: justify;
+        }
+
+        &__imagen--mediano {
+            display: none;
+        }
+
+        &__imagen--grande {
+            display: none;
+        }
+    }
+}
+
+
+@media (min-width:1101px) {
+
+    .index-main {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        text-align: center;
+        justify-content: center;
+        gap: 30px;
+
+
+        &__parrafo {
+            text-align: justify;
+        }
+
+        &__imagen--mediano {
+            display: none;
+        }
+
+        &__imagen--pequeno {
+            display: none;
+        }
+    }
+}

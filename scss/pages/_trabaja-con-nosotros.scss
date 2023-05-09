@@ -1,46 +1,43 @@
 @media (max-width:576px) {
-  
+
     .formulario__lista-puestos {
         gap: 70px;
         padding: 15px;
         text-align: center;
     }
-  
-  
+
+
     .formulario__lista-campos {
         text-align: left;
         padding-left: 0%;
-    }
-  
-  
-    .formulario__lista-campos li {
-        padding: 10px;
-    }
 
-  }
-  
-  
-  @media (min-width:576px) { 
-    
+        li {
+            padding: 10px;
+        }
+    }
+}
+
+
+@media (min-width:576px) {
+
     .formulario {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 100px;
-    }
-    
-    .formulario__lista-puestos {
-        gap: 70px;
-        padding: 15px;
-    }
 
-    .formulario__lista-campos {
-        align-items: center;
-        padding-left: 15px;
+        &__lista-puestos {
+            gap: 70px;
+            padding: 15px;
+        }
+
+        &__lista-campos {
+            align-items: center;
+            padding-left: 15px;
+        }
+
+        &__lista-campos li {
+            padding: 10px;
+        }
     }
-  
-   .formulario__lista-campos li {
-        padding: 10px;
-    } 
-  
 }

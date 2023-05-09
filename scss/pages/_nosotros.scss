@@ -4,38 +4,32 @@
         padding-top: 0%;
         padding-bottom: 10px;
         justify-content: center;
-        align-items: center
-    }
-  
-  
-    .nosotros-main__mision {
-        justify-content: center;
         align-items: center;
-        text-align: justify;
-        padding-top: 0%;
-        padding-bottom: 10px;
-    }
-  
-  
-    .nosotros-main__vision--titulo-mision {
-        padding-bottom: 40px;
-        height: 32px;
-    }
-  
-  
-    .nosotros-main__vision {
-        justify-content: center;
-        align-items: center;
-        text-align: justify;
-    }
-  
-  
-    .nosotros-main__vision--titulo-vision {
-        padding-bottom: 40px;
-        height: 32px;
-    }
 
-  
+        &__mision {
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+            padding-top: 0%;
+            padding-bottom: 10px;
+        }
+
+        &__vision--titulo-mision {
+            padding-bottom: 40px;
+            height: 32px;
+        }
+
+        &__vision {
+            justify-content: center;
+            align-items: center;
+            text-align: justify;
+        }
+      
+        &__vision--titulo-vision {
+            padding-bottom: 40px;
+            height: 32px;
+        }    
+    }
 }
 
 @media (min-width:576px) {
@@ -43,39 +37,44 @@
         padding-top: 0%;
         padding-bottom: 10px;
         justify-content: center;
-        align-items: center
+        align-items: center;
+
+        &__mision {
+            display: grid;
+            grid-template-columns: 30% 40%;
+            justify-content: center;
+            align-items: center baseline;
+            padding-top: 20px;
+            padding-bottom: 50px;
+            gap: 30px;
+        }
+
+        &__vision--titulo-mision {
+            height: 30vh;
+            width: 30vw;
+        }
+
+        &__vision {
+            display: grid;
+            grid-template-columns: 30% 40%;
+            justify-content: center;
+            align-items: center baseline;
+            gap: 30px;
+            padding-bottom: 20px;
+        }
+           
+        &__vision--titulo-vision {
+            height: 30vh;
+            width: 30vw;
+        }
     }
   
   
-    .nosotros-main__mision {
-        display: grid;
-        grid-template-columns: 30% 40%;
-        justify-content: center;
-        align-items: center baseline;
-        padding-top: 20px;
-        padding-bottom: 50px;
-        gap: 30px;
-    }
   
   
-    .nosotros-main__vision--titulo-mision {
-        height: 30vh;
-        width: 30vw;
-    }
+  
+
   
   
-    .nosotros-main__vision {
-        display: grid;
-        grid-template-columns: 30% 40%;
-        justify-content: center;
-        align-items: center baseline;
-        gap: 30px;
-        padding-bottom: 20px;
-    }
-  
-  
-    .nosotros-main__vision--titulo-vision {
-        height: 30vh;
-        width: 30vw;
-    }
+
  }
